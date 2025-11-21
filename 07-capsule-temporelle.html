@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ton Monde d'Époque</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page">
+    <div class="capsule-container">
+      
+      <!-- En-tête -->
+      <div class="capsule-header">
+        <h2 class="capsule-title">Ton Monde d'Époque</h2>
+        <div class="ornament-line"></div>
+        <div class="capsule-year">{{ANNEE_NAISSANCE}}</div>
+        <p class="capsule-subtitle">
+          Ce à quoi ressemblait le monde quand tu es arrivé(e)
+        </p>
+      </div>
+
+      <!-- Image principale (générée par IA) -->
+      <div class="capsule-image">
+        <!-- Image IA insérée ici -->
+        {{CAPSULE_IMAGE_URL}}
+        <!-- Placeholder si pas d'image -->
+        <div class="capsule-image-placeholder">
+          Image générée : Objets, pubs, packaging, ambiances de {{ANNEE_NAISSANCE}}
+        </div>
+      </div>
+      <p class="capsule-legend">
+        Une plongée visuelle dans l'univers de {{ANNEE_NAISSANCE}}
+      </p>
+
+      <!-- Grille d'éléments culturels -->
+      <div class="capsule-grid">
+        <div class="capsule-item">
+          <div class="capsule-item-icon">🎵</div>
+          <div class="capsule-item-label">Musique du moment</div>
+          <div class="capsule-item-value">{{CHANSON_TOP}}</div>
+        </div>
+
+        <div class="capsule-item">
+          <div class="capsule-item-icon">📺</div>
+          <div class="capsule-item-label">Série phare</div>
+          <div class="capsule-item-value">{{SERIE_POPULAIRE}}</div>
+        </div>
+
+        <div class="capsule-item">
+          <div class="capsule-item-icon">🎮</div>
+          <div class="capsule-item-label">Jeu culte</div>
+          <div class="capsule-item-value">{{JEU_CULTE}}</div>
+        </div>
+
+        <div class="capsule-item">
+          <div class="capsule-item-icon">👕</div>
+          <div class="capsule-item-label">Mode de l'époque</div>
+          <div class="capsule-item-value">{{MODE_TENDANCE}}</div>
+        </div>
+      </div>
+
+      <!-- Note nostalgique -->
+      <div class="nostalgia-note">
+        <p class="nostalgia-note-text">
+          Voilà l'univers dans lequel tu as grandi. Ces objets, ces sons, 
+          ces images... Ils ont façonné ton enfance et font partie de toi, 
+          même si tu ne t'en souviens pas consciemment.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- 
+╔════════════════════════════════════════════════════════════╗
+║  NOTE GÉNÉRATION IMAGE IA                                   ║
+║  ──────────────────────────────────────────────────────    ║
+║  Prompt Midjourney/DALL-E suggéré :                        ║
+║                                                              ║
+║  "Vintage collage of iconic objects from [ANNÉE],          ║
+║  including [OBJETS SPÉCIFIQUES], retro advertising,        ║
+║  product packaging, technology, fashion, warm nostalgic    ║
+║  lighting, editorial photography style --ar 16:9"          ║
+║                                                              ║
+║  Si pas d'image IA : Le placeholder texte est élégant.     ║
+╚════════════════════════════════════════════════════════════╝
+-->

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Affiche du {{DATE_COMPLETE_FR}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+<div class="page">
+  
+  <!-- COINS -->
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+  
+  <!-- HEADER -->
+  <div class="header">
+    <h1 class="header-title">NOSTALGIE</h1>
+    <p class="header-subtitle">Les souvenirs d'une époque révolue</p>
+  </div>
+  
+  <!-- JOURNÉE TYPE - HORIZONTAL -->
+  <div class="journee-box">
+    <div class="journee-header">
+      <span class="journee-emoji">📼</span>
+      <h2 class="journee-title">Tu te souviens ?</h2>
+      <p class="journee-age">Quand tu avais {{age}} ans</p>
+    </div>
+    
+    <div class="journee-content">
+      <div class="moment">
+        <div class="moment-icon">🌅</div>
+        <div class="moment-label">Le Matin</div>
+        <div class="moment-text">{{matin}}</div>
+      </div>
+      
+      <div class="moment">
+        <div class="moment-icon">☀️</div>
+        <div class="moment-label">L'Après-midi</div>
+        <div class="moment-text">{{apresmidi}}</div>
+      </div>
+      
+      <div class="moment">
+        <div class="moment-icon">🌙</div>
+        <div class="moment-label">Le Soir</div>
+        <div class="moment-text">{{soir}}</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- GRILLE CONTENU -->
+  <div class="content-grid">
+    
+    <!-- COLONNE GAUCHE -->
+    <div>
+      
+      <!-- À L'ÉCRAN -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-icon">📺</span>
+          <h3 class="section-title">À l'écran</h3>
+        </div>
+        <div class="items">
+          <div class="item">{{ecran_1}}</div>
+          <div class="item">{{ecran_2}}</div>
+          <div class="item">{{ecran_3}}</div>
+        </div>
+      </div>
+      
+      <!-- LE GOÛTER -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-icon">🍭</span>
+          <h3 class="section-title">Le goûter</h3>
+        </div>
+        <div class="items">
+          <div class="item">{{gouter_1}}</div>
+          <div class="item">{{gouter_2}}</div>
+          <div class="item">{{gouter_3}}</div>
+        </div>
+      </div>
+      
+      <!-- ON JOUAIT À -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-icon">🎮</span>
+          <h3 class="section-title">On jouait à</h3>
+        </div>
+        <div class="items">
+          <div class="item">{{jeu_1}}</div>
+          <div class="item">{{jeu_2}}</div>
+          <div class="item">{{jeu_3}}</div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- COLONNE DROITE -->
+    <div>
+      
+      <!-- DANS LES OREILLES -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-icon">🎵</span>
+          <h3 class="section-title">Dans les oreilles</h3>
+        </div>
+        <div class="items">
+          <div class="item">{{musique_1}}</div>
+          <div class="item">{{musique_2}}</div>
+          <div class="item">{{musique_3}}</div>
+        </div>
+      </div>
+      
+      <!-- ON LISAIT -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-icon">📚</span>
+          <h3 class="section-title">On lisait</h3>
+        </div>
+        <div class="items">
+          <div class="item">{{lecture_1}}</div>
+          <div class="item">{{lecture_2}}</div>
+          <div class="item">{{lecture_3}}</div>
+        </div>
+      </div>
+      
+      <!-- ON DISAIT -->
+      <div class="section">
+        <div class="section-header">
+          <span class="section-icon">💬</span>
+          <h3 class="section-title">On disait</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">{{expression_1}}</span>
+          <span class="tag">{{expression_2}}</span>
+          <span class="tag">{{expression_3}}</span>
+          <span class="tag">{{expression_4}}</span>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <!-- OBJETS CULTES - AVEC SCOTCH -->
+  <div class="postit-section">
+    <h3 class="postit-title">🏆 Objets cultes de l'époque</h3>
+    <div class="postit-grid">
+      <div class="postit-item">{{objet_1}}</div>
+      <div class="postit-item">{{objet_2}}</div>
+      <div class="postit-item">{{objet_3}}</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

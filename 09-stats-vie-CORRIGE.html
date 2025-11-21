@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tes Stats de Vie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+   <div class="page">
+        
+        <div class="header">
+            <h1 class="main-title">Toi Aujourd'hui</h1>
+            <div class="divider"></div>
+            <p class="subtitle">Depuis le {{DATE_COMPLETE_FR}}</p>
+        </div>
+
+        <div class="age-display">
+            <div class="age-number">{{AGE_ACTUEL}} ans</div>
+        </div>
+
+        <div class="stats-grid">
+            
+            <div class="stat-card">
+                <span class="stat-emoji">❤️</span>
+                <div class="stat-value">{{BATTEMENTS_COEUR}}</div>
+                <div class="stat-label">Battements de ton cœur</div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-emoji">🌍</span>
+                <div class="stat-value">{{PAS_MARCHES}}</div>
+                <div class="stat-label">Fois Paris-Marseille</div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-emoji">😴</span>
+                <div class="stat-value">{{HEURES_SOMMEIL}}</div>
+                <div class="stat-label">Passées à dormir</div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-emoji">📚</span>
+                <div class="stat-value">{{HEURES_APPRENTISSAGE}}</div>
+                <div class="stat-label">D'apprentissage (école + études)</div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-emoji">🍽️</span>
+                <div class="stat-value">{{REPAS_PRIS}}</div>
+                <div class="stat-label">Repas partagés avec tes proches</div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-emoji">🌙</span>
+                <div class="stat-value">{{RESPIRATIONS}}</div>
+                <div class="stat-label">Respirations</div>
+            </div>
+
+        </div>
+
+        <div class="world-section">
+            <h2 class="world-title">Pendant ce temps, l'humanité...</h2>
+            
+            <div class="world-stats">
+                
+                <div class="world-card">
+                    <div class="world-value">{{POPULATION_AUGMENTATION}}</div>
+                    <div class="world-label">Habitants sur terre</div>
+                </div>
+
+                <div class="world-card">
+                    <div class="world-value">{{ESPERANCE_VIE}}</div>
+                    <div class="world-label">Espérance de vie</div>
+                </div>
+
+                <div class="world-card">
+                    <div class="world-value">{{SMARTPHONES}}</div>
+                    <div class="world-label">Smartphones vendus</div>
+                </div>
+
+                <div class="world-card">
+                    <div class="world-value">{{UTILISATEURS_INTERNET}}</div>
+                    <div class="world-label">Utilisateurs internet</div>
+                </div>
+
+                <div class="world-card">
+                    <div class="world-value">{{INVENTIONS}}</div>
+                    <div class="world-label">Grandes inventions brevetées</div>
+                </div>
+
+                <div class="world-card">
+                    <div class="world-value">{{JEUX_OLYMPIQUES}}</div>
+                    <div class="world-label">Jeux olympiques organisés</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<!-- 
+╔════════════════════════════════════════════════════════════╗
+║  VARIABLES NÉCESSAIRES                                      ║
+║  ──────────────────────────────────────────────────────    ║
+║  {{DATE_COMPLETE_FR}}       - Ex: "15 mai 1990"            ║
+║  {{AGE_ACTUEL}}             - Ex: 35                       ║
+║                                                              ║
+║  STATS PERSONNELLES (7) :                                   ║
+║  {{BATTEMENTS_COEUR}}       - Ex: "1,3 Mds"                ║
+║  {{RESPIRATIONS}}           - Ex: "298 M"                  ║
+║  {{PAS_MARCHES}}            - Ex: "97 M"                   ║
+║  {{HEURES_SOMMEIL}}         - Ex: "103 456 h"              ║
+║  {{REPAS_PRIS}}             - Ex: "38 796"                 ║
+║  {{KM_AUTOUR_SOLEIL}}       - Ex: "33,4 Mds km"            ║
+║  {{ORBITES_LUNAIRES}}       - Ex: "439"                    ║
+║                                                              ║
+║  STATS HUMANITÉ (4) :                                       ║
+║  {{POPULATION_AUGMENTATION}} - Ex: "+2,8 Mds"              ║
+║  {{INVENTIONS}}              - Ex: "426"                   ║
+║  {{DECOUVERTES}}             - Ex: "852"                   ║
+║  {{AUGMENTATION_PAIN}}       - Ex: "×7,4"                  ║
+║                                                              ║
+║  TOTAL : 13 VARIABLES                                       ║
+║                                                              ║
+║  NOTE CALCULS :                                             ║
+║  Ces stats sont calculées automatiquement par Claude       ║
+║  via le prompt PROMPT-CLAUDE-STATS-VIE-AUTO.md             ║
+║                                                              ║
+║  Formules :                                                 ║
+║  - Battements cœur : age_jours × 100 800                   ║
+║  - Respirations : age_jours × 23 040                       ║
+║  - Pas marchés : age_jours × 7 500                         ║
+║  - Heures sommeil : age_jours × 8                          ║
+║  - Repas : age_jours × 3                                   ║
+║  - Km soleil : age_annees × 940 000 000                    ║
+║  - Orbites Lune : age_annees × 12.37                       ║
+║  - Population : 8,1 Mds - pop_naissance                    ║
+║  - Inventions : age_annees × 12                            ║
+║  - Découvertes : age_annees × 24                           ║
+║  - Pain : 1,70€ / prix_naissance                           ║
+║                                                              ║
+║  Format des nombres avec espaces : 1 234 567               ║
+╚════════════════════════════════════════════════════════════╝
+-->

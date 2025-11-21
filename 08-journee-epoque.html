@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Une Journée en {{ANNEE}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page">
+    <div class="journee-container">
+      
+      <!-- En-tête -->
+      <div class="journee-header">
+        <h2 class="journee-title">Une Journée en {{ANNEE_NAISSANCE}}</h2>
+        <div class="ornament-line"></div>
+        <p class="journee-subtitle">
+          Si tu avais vécu ton premier jour comme une vraie journée
+        </p>
+      </div>
+
+      <!-- Matin -->
+      <div class="journee-block">
+        <div class="journee-time">🌅 Matin</div>
+        <div class="journee-text">
+          {{JOURNEE_MATIN}}
+        </div>
+        <div class="journee-sensory">
+          {{JOURNEE_MATIN_SENSORY}}
+        </div>
+      </div>
+
+      <!-- Midi -->
+      <div class="journee-block">
+        <div class="journee-time">☀️ Midi</div>
+        <div class="journee-text">
+          {{JOURNEE_MIDI}}
+        </div>
+        <div class="journee-sensory">
+          {{JOURNEE_MIDI_SENSORY}}
+        </div>
+      </div>
+
+      <!-- Après-midi -->
+      <div class="journee-block">
+        <div class="journee-time">🌤️ Après-midi</div>
+        <div class="journee-text">
+          {{JOURNEE_APRES_MIDI}}
+        </div>
+        <div class="journee-sensory">
+          {{JOURNEE_APRES_MIDI_SENSORY}}
+        </div>
+      </div>
+
+      <!-- Soir -->
+      <div class="journee-block">
+        <div class="journee-time">🌙 Soir</div>
+        <div class="journee-text">
+          {{JOURNEE_SOIR}}
+        </div>
+        <div class="journee-sensory">
+          {{JOURNEE_SOIR_SENSORY}}
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="journee-footer">
+        <p class="journee-footer-text">
+          Voilà à quoi ressemblait une journée ordinaire dans le monde 
+          où tu es arrivé(e). Simple, mais remplie d'une magie que 
+          nous avons oubliée.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- 
+╔════════════════════════════════════════════════════════════╗
+║  NOTE ÉDITORIALE                                            ║
+║  ──────────────────────────────────────────────────────    ║
+║  Chaque bloc (matin/midi/après-midi/soir) :                ║
+║  - Texte principal : 40-60 mots                            ║
+║  - Sensory note : 15-25 mots (sons, odeurs, sensations)   ║
+║                                                              ║
+║  Ton : Immersif, nostalgique, détails sensoriels.          ║
+║  Style : "Je me réveille sur... Dans la cuisine, il y a..." ║
+╚════════════════════════════════════════════════════════════╝
+-->

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ton Profil d'Époque</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page">
+    
+    <!-- En-tête de page -->
+    <div class="page-header">
+      <h2 class="page-title text-uppercase">Ton Profil d'Époque</h2>
+      <div class="ornament-line"></div>
+    </div>
+
+    <!-- Carte d'identité -->
+    <div class="identity-card">
+      
+      <!-- En-tête carte -->
+      <div class="identity-header">
+        <div class="identity-icon">⭐</div>
+        <div class="identity-name">{{PRENOM}}</div>
+        <div class="identity-subtitle">Arrivé(e) le {{DATE_COMPLETE_FR}}</div>
+      </div>
+
+      <!-- Grille des 3 traits principaux -->
+      <div class="traits-grid">
+        <div class="trait-item">
+          <div class="trait-icon">🦁</div>
+          <div class="trait-label">Caractère</div>
+          <div class="trait-value">{{TRAIT_1}}</div>
+        </div>
+        <div class="trait-item">
+          <div class="trait-icon">✨</div>
+          <div class="trait-label">Tempérament</div>
+          <div class="trait-value">{{TRAIT_2}}</div>
+        </div>
+        <div class="trait-item">
+          <div class="trait-icon">🎯</div>
+          <div class="trait-label">Talent</div>
+          <div class="trait-value">{{TRAIT_3}}</div>
+        </div>
+      </div>
+
+      <!-- Informations complémentaires -->
+      <div class="identity-info">
+        <div class="info-row">
+          <span class="info-label">Rôle dans la fiction</span>
+          <span class="info-value">{{ROLE_FICTION}}</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Superpouvoir</span>
+          <span class="info-value">{{SUPERPOWER}}</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Devise</span>
+          <span class="info-value">{{DEVISE}}</span>
+        </div>
+      </div>
+
+      <!-- Tampon authentique -->
+      <div class="identity-stamp">
+        <div class="stamp-text">Certifié<br>Unique</div>
+      </div>
+
+    </div>
+
+    <!-- Note contextuelle -->
+    <div class="highlight-box mt-lg">
+      <p class="text-center" style="margin: 0;">
+        <strong>Ce profil te suivra dans la suite de ton voyage...</strong><br>
+        Il te permettra de comprendre comment tu aurais vécu l'Histoire.
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>

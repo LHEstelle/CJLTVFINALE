@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Affiche du {{DATE_COMPLETE_FR}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page affiche-page">
+    
+    <!-- En-tête -->
+    <div class="affiche-header">
+      <div class="affiche-date">{{DATE_COMPLETE_FR}}</div>
+      <div class="stars-pattern">✦ ✦ ✦</div>
+      <div class="affiche-subtitle">L'affiche du jour</div>
+    </div>
+
+    <!-- ÉVÉNEMENT PRINCIPAL -->
+    <div class="event-hero">
+      <div class="event-badge">⚡ Événement du jour</div>
+      <h2 class="event-title">{{EVENEMENT_HISTORIQUE}}</h2>
+      <p class="event-description">{{EVENEMENT_DESCRIPTION}}</p>
+    </div>
+
+    <!-- NAISSANCES & DÉCÈS (2 colonnes) -->
+    <div class="two-col-grid">
+      <div class="compact-section">
+        <div class="section-label">🎂 Né(e)s</div>
+        <div class="section-content">
+          <div class="list-item">
+            <span class="item-name">{{NAISSANCE_1_NOM}}</span>
+            <span class="item-year">{{NAISSANCE_1_ANNEE}}</span>
+          </div>
+          <div class="list-item">
+            <span class="item-name">{{NAISSANCE_2_NOM}}</span>
+            <span class="item-year">{{NAISSANCE_2_ANNEE}}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="compact-section">
+        <div class="section-label">🕯️ Décédé(e)s</div>
+        <div class="section-content">
+          <div class="list-item">
+            <span class="item-name">{{DECES_1_NOM}}</span>
+            <span class="item-year">{{DECES_1_ANNEE}}</span>
+          </div>
+          <div class="list-item">
+            <span class="item-name">{{DECES_2_NOM}}</span>
+            <span class="item-year">{{DECES_2_ANNEE}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRILLE 2 COLONNES : Culture + Météo -->
+    <div class="two-col-grid">
+      <!-- Culture -->
+      <div class="compact-section">
+        <div class="section-label">🎬 Culture</div>
+        <div class="section-content">
+          <div class="culture-grid">
+            <div class="culture-item">
+              <div class="culture-icon">🎵</div>
+              <div class="culture-text">
+                <div class="culture-label">Chanson #1</div>
+                <div class="culture-value">{{CHANSON_TOP}}</div>
+              </div>
+            </div>
+            <div class="culture-item">
+              <div class="culture-icon">🎬</div>
+              <div class="culture-text">
+                <div class="culture-label">Film culte</div>
+                <div class="culture-value">{{FILM_CULTE_ANNEE}}</div>
+              </div>
+            </div>
+            <div class="culture-item">
+              <div class="culture-icon">🎞️</div>
+              <div class="culture-text">
+                <div class="culture-label">Sorti ce jour</div>
+                <div class="culture-value">{{FILM_JOUR_PRECISE}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Météo -->
+      <div class="compact-section">
+        <div class="section-label">☀️ La météo</div>
+        <div class="section-content">
+          <div class="culture-grid">
+            <div class="culture-item">
+              <div class="culture-icon">{{METEO_ICONE}}</div>
+              <div class="culture-text">
+                <div class="culture-label">Météo du jour</div>
+                <div class="culture-value">{{METEO_DESCRIPTION}}</div>
+              </div>
+            </div>
+            <div class="culture-item">
+              <div class="culture-icon">🌡️</div>
+              <div class="culture-text">
+                <div class="culture-label">Température</div>
+                <div class="culture-value">{{METEO_TEMP}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS DU MONDE (simplifié) -->
+    <div class="compact-section">
+      <div class="section-label">🌍 Le monde</div>
+      <div class="section-content">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-icon">🥖</div>
+            <span class="stat-value">{{PRIX_PAIN}}</span>
+            <div class="stat-label">Prix pain</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon">🇫🇷</div>
+            <span class="stat-value">{{POPULATION_FRANCE}}</span>
+            <div class="stat-label">France</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon">🌍</div>
+            <span class="stat-value">{{POPULATION_MONDE}}</span>
+            <div class="stat-label">Monde</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="affiche-footer">
+      <p class="footer-text">
+        → Qui sont ces personnes ? Pourquoi ce jour compte ?<br>
+        <strong>Réponses page suivante</strong>
+      </p>
+    </div>
+
+  </div>
+</body>
+</html>

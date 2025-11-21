@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuel d'Utilisation - {{PRENOM}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page manual-page">
+    
+    <!-- Séparateur haut -->
+    <div class="separator">◆ ◆ ◆</div>
+    
+    <!-- En-tête -->
+    <div class="manual-header">
+      <div class="manual-title">📘 Manuel d'Utilisation</div>
+      <div class="manual-subtitle">Modèle : {{PRENOM_UPPER}}</div>
+      <div class="manual-subtitle">(Édition {{ANNEE_NAISSANCE}})</div>
+    </div>
+    
+    <div class="separator">◆ ◆ ◆</div>
+
+    <!-- SPÉCIFICATIONS -->
+    <div class="manual-section">
+      <div class="section-header">
+        📋 SPÉCIFICATIONS
+      </div>
+      <div class="section-content">
+        <div class="spec-item">
+          <span class="spec-label">{{SPEC_1_LABEL}}</span>
+          <span class="spec-value">{{SPEC_1_VALUE}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">{{SPEC_2_LABEL}}</span>
+          <span class="spec-value">{{SPEC_2_VALUE}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">{{SPEC_3_LABEL}}</span>
+          <span class="spec-value">{{SPEC_3_VALUE}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALERTE CRITIQUE -->
+    <div class="alert-box">
+      <div class="alert-header">⚠️ ALERTE CRITIQUE : {{ALERT_TITRE}}</div>
+      
+      <div class="alert-incident">🚨 INCIDENT "{{INCIDENT_NOM}}"</div>
+      
+      <div class="section-content">
+        <p>{{INCIDENT_CONTEXTE}}</p>
+      </div>
+      
+      <div class="alert-verbatim">
+        Verbatim : "{{INCIDENT_CITATION}}"
+      </div>
+      
+      <div class="alert-details">
+        <div class="spec-item">
+          <span class="spec-label">Durée</span>
+          <span class="spec-value">{{INCIDENT_DUREE}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Nécessité</span>
+          <span class="spec-value">{{INCIDENT_NECESSITE}}</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Impact</span>
+          <span class="spec-value">{{INCIDENT_IMPACT}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TÉMOIGNAGE -->
+    <div class="testimonial-box">
+      <div class="testimonial-stars">💬 TÉMOIGNAGE UTILISATEUR</div>
+      <div class="testimonial-stars">{{TEMOIGNAGE_STARS}}</div>
+      <p class="testimonial-text">"{{TEMOIGNAGE_TEXTE}}"</p>
+      <div class="testimonial-author">- {{TEMOIGNAGE_AUTEUR}}</div>
+    </div>
+
+    <!-- ÉVALUATION TECHNIQUE -->
+    <div class="manual-section">
+      <div class="section-header">
+        📊 ÉVALUATION TECHNIQUE
+      </div>
+      <div class="section-content">
+        <div class="eval-item">
+          <span class="eval-label">{{EVAL_1_LABEL}}</span>
+          <span class="eval-dots"></span>
+          <span class="eval-score">{{EVAL_1_SCORE}} <span class="eval-icon">{{EVAL_1_ICON}}</span></span>
+        </div>
+        <div class="eval-item">
+          <span class="eval-label">{{EVAL_2_LABEL}}</span>
+          <span class="eval-dots"></span>
+          <span class="eval-score">{{EVAL_2_SCORE}} <span class="eval-icon">{{EVAL_2_ICON}}</span></span>
+        </div>
+        <div class="eval-item">
+          <span class="eval-label">{{EVAL_3_LABEL}}</span>
+          <span class="eval-dots"></span>
+          <span class="eval-score">{{EVAL_3_SCORE}} <span class="eval-icon">{{EVAL_3_ICON}}</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ANALYSE EXPERTE -->
+    <div class="expert-quote">
+      <div class="section-header" style="margin-bottom: var(--spacing-sm);">
+        🔍 ANALYSE EXPERTE
+      </div>
+      <p class="expert-text">"{{ANALYSE_EXPERT}}"</p>
+      <div class="expert-author">- {{EXPERT_NOM}}, {{EXPERT_TITRE}}</div>
+    </div>
+
+    <!-- GARANTIE -->
+    <div class="warranty-box">
+      <div class="section-header" style="justify-content: center; margin-bottom: var(--spacing-sm);">
+        💚 GARANTIE
+      </div>
+      <div class="warranty-text">
+        {{GARANTIE_LIGNE1}}<br>
+        {{GARANTIE_LIGNE2}}<br>
+        {{GARANTIE_LIGNE3}}
+      </div>
+    </div>
+
+    <!-- Séparateur bas -->
+    <div class="separator">◆ ◆ ◆</div>
+
+    <!-- Footer -->
+    <div class="manual-footer">
+      Document technique généré automatiquement • Ne pas reproduire sans autorisation<br>
+      © {{ANNEE_NAISSANCE}}-2025 • Tous droits réservés
+    </div>
+
+  </div>
+</body>
+</html>
+
+<!-- 
+╔════════════════════════════════════════════════════════════╗
+║  VARIABLES NÉCESSAIRES (28)                                 ║
+║  ──────────────────────────────────────────────────────    ║
+║  BASE :                                                     ║
+║  {{PRENOM_UPPER}}           - Ex: "JOJO"                   ║
+║  {{ANNEE_NAISSANCE}}        - Ex: 2005                     ║
+║                                                              ║
+║  SPÉCIFICATIONS (3×2 = 6) :                                 ║
+║  {{SPEC_1_LABEL}}           - Ex: "Capteurs humidité"      ║
+║  {{SPEC_1_VALUE}}           - Ex: "Ultrasensibles"         ║
+║  {{SPEC_2_LABEL}}           - Ex: "Système rangement"      ║
+║  {{SPEC_2_VALUE}}           - Ex: "Tri couleur obligatoire"║
+║  {{SPEC_3_LABEL}}           - Ex: "Vigilance routière"     ║
+║  {{SPEC_3_VALUE}}           - Ex: "Niveau PARANO"          ║
+║                                                              ║
+║  ALERTE CRITIQUE (7) :                                      ║
+║  {{ALERT_TITRE}}            - Ex: "DÉFAILLANCE CONNUE"     ║
+║  {{INCIDENT_NOM}}           - Ex: "DOS D'ÂNE"              ║
+║  {{INCIDENT_CONTEXTE}}      - Texte contextuel             ║
+║  {{INCIDENT_CITATION}}      - Ex: "DOS D'AAAANE !"         ║
+║  {{INCIDENT_DUREE}}         - Ex: "4,7 secondes"           ║
+║  {{INCIDENT_NECESSITE}}     - Ex: "0%"                     ║
+║  {{INCIDENT_IMPACT}}        - Ex: "Fou rire généralisé"    ║
+║                                                              ║
+║  TÉMOIGNAGE (3) :                                           ║
+║  {{TEMOIGNAGE_STARS}}       - Ex: "⭐⭐⭐⭐⭐"              ║
+║  {{TEMOIGNAGE_TEXTE}}       - Citation utilisateur         ║
+║  {{TEMOIGNAGE_AUTEUR}}      - Ex: "Un conducteur..."       ║
+║                                                              ║
+║  ÉVALUATION (3×3 = 9) :                                     ║
+║  {{EVAL_1_LABEL}}           - Ex: "Détection danger"       ║
+║  {{EVAL_1_SCORE}}           - Ex: "3/20"                   ║
+║  {{EVAL_1_ICON}}            - Ex: "⚠️"                     ║
+║  (× 3 items)                                                ║
+║                                                              ║
+║  ANALYSE (3) :                                              ║
+║  {{ANALYSE_EXPERT}}         - Citation experte             ║
+║  {{EXPERT_NOM}}             - Ex: "Dr. Expertise"          ║
+║  {{EXPERT_TITRE}}           - Ex: "Labo Comportemental"    ║
+║                                                              ║
+║  GARANTIE (3) :                                             ║
+║  {{GARANTIE_LIGNE1}}        - Ex: "Modèle unique."         ║
+║  {{GARANTIE_LIGNE2}}        - Ex: "Défauts inclus."        ║
+║  {{GARANTIE_LIGNE3}}        - Ex: "On ne changerait rien." ║
+╚════════════════════════════════════════════════════════════╝
+-->

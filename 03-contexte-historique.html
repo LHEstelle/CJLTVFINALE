@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Contexte du Jour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page">
+    <div class="context-container">
+      
+      <!-- En-tête -->
+      <div class="context-header">
+        <h2 class="context-title">Ce jour dans l'Histoire</h2>
+        <div class="ornament-line"></div>
+        <p class="context-subtitle">Comprendre le monde où tu es arrivé(e)</p>
+      </div>
+
+      <!-- Section : Contexte général -->
+      <div class="article-section">
+        <div class="article-section-title">
+          <span>🌍</span>
+          <span>L'époque</span>
+        </div>
+        <div class="article-text text-responsive">
+          {{CONTEXTE_GENERAL}}
+        </div>
+      </div>
+
+      <!-- Section : Les personnalités -->
+      <div class="article-section">
+        <div class="article-section-title">
+          <span>👤</span>
+          <span>Les visages de ce jour</span>
+        </div>
+        
+        <div class="person-spotlight">
+          <div class="person-spotlight-name">{{NAISSANCE_1_NOM}}</div>
+          <div class="person-spotlight-text">{{NAISSANCE_1_EXPLICATION}}</div>
+        </div>
+
+        <div class="person-spotlight">
+          <div class="person-spotlight-name">{{NAISSANCE_2_NOM}}</div>
+          <div class="person-spotlight-text">{{NAISSANCE_2_EXPLICATION}}</div>
+        </div>
+
+        <div class="person-spotlight">
+          <div class="person-spotlight-name">{{DECES_1_NOM}}</div>
+          <div class="person-spotlight-text">{{DECES_1_EXPLICATION}}</div>
+        </div>
+
+        <div class="person-spotlight">
+          <div class="person-spotlight-name">{{DECES_2_NOM}}</div>
+          <div class="person-spotlight-text">{{DECES_2_EXPLICATION}}</div>
+        </div>
+      </div>
+
+      <!-- Section : Le cinéma -->
+      <div class="article-section">
+        <div class="article-section-title">
+          <span>🎬</span>
+          <span>Le cinéma de cette époque</span>
+        </div>
+        <div class="article-text">
+          <p><strong>{{FILM_CULTE_ANNEE}}</strong> — {{FILM_CULTE_EXPLICATION}}</p>
+          <p><strong>{{FILM_JOUR_PRECISE}}</strong> — {{FILM_JOUR_EXPLICATION}}</p>
+        </div>
+      </div>
+
+      <!-- Fun Fact -->
+      <div class="fun-fact">
+        <div class="fun-fact-icon">💡</div>
+        <div class="fun-fact-title">Le saviez-vous ?</div>
+        <div class="fun-fact-text">
+          {{FUN_FACT}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

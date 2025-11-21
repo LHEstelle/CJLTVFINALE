@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message pour toi dans 10 ans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page">
+    <div class="message-future-container">
+      
+      <!-- En-tête -->
+      <div class="message-header">
+        <div class="ornament-line"></div>
+        <h2 class="message-title">Message pour toi dans 10 ans</h2>
+        <p class="message-date">De {{PRENOM}} ({{ANNEE_ACTUELLE}}) à {{PRENOM}} ({{ANNEE_FUTURE}})</p>
+        <p class="message-subtitle">Une capsule temporelle personnelle</p>
+        <div class="ornament-line"></div>
+      </div>
+
+      <!-- Cadre d'écriture -->
+      <div class="writing-frame">
+        <p class="writing-prompt">
+          Cher(e) moi du futur...
+        </p>
+        <div class="writing-lines">
+          <!-- Espace vide pour écrire à la main -->
+        </div>
+        <div class="signature-line">
+          <span class="signature-label">Ta signature</span>
+        </div>
+      </div>
+
+      <!-- Instructions -->
+      <div class="instructions-box">
+        <div class="instructions-title">📝 Suggestions d'écriture</div>
+        <div class="instructions-text">
+          <ul class="custom-list">
+            <li>Quels sont tes rêves actuels ?</li>
+            <li>Qu'espères-tu avoir accompli dans 10 ans ?</li>
+            <li>Quel conseil te donnerais-tu ?</li>
+            <li>Qu'est-ce qui te rend heureux(se) en ce moment ?</li>
+            <li>Une peur que tu aimerais dépasser ?</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sceau temporel -->
+      <div class="date-seal">
+        <div class="seal-circle">
+          <div class="seal-year">{{ANNEE_ACTUELLE}}</div>
+          <div class="seal-text">À ouvrir<br>en {{ANNEE_FUTURE}}</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- 
+╔════════════════════════════════════════════════════════════╗
+║  NOTE ÉDITORIALE                                            ║
+║  ──────────────────────────────────────────────────────    ║
+║  Cette page est conçue pour être IMPRIMÉE et remplie       ║
+║  À LA MAIN par le destinataire.                            ║
+║                                                              ║
+║  Les lignes horizontales guident l'écriture manuscrite.    ║
+║                                                              ║
+║  Variables nécessaires :                                    ║
+║  - {{PRENOM}}                                               ║
+║  - {{ANNEE_ACTUELLE}} (ex: 2025)                           ║
+║  - {{ANNEE_FUTURE}} (ex: 2035 = ANNEE_ACTUELLE + 10)       ║
+╚════════════════════════════════════════════════════════════╝
+-->

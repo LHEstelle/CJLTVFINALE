@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pour Toi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-ce-jour-la-FINAL.css">
+</head>
+<body>
+  <div class="page letter-page">
+    <!-- Texture papier -->
+    <div class="letter-texture"></div>
+    
+    <!-- Icône enveloppe décorative -->
+    <div class="letter-envelope-icon">✉</div>
+
+    <div class="letter-content">
+      
+      <!-- En-tête -->
+      <div class="letter-header">
+        <h2 class="letter-title">Pour toi</h2>
+        <div class="letter-decorative-line"></div>
+        <p class="letter-subtitle">Un message qui t'est destiné</p>
+      </div>
+
+      <!-- Corps de la lettre -->
+      <div class="letter-body-container">
+        <div class="letter-recipient">
+          {{FORMULE_OUVERTURE}} {{PRENOM}},
+        </div>
+
+        <div class="letter-body text-responsive">
+          {{MESSAGE_PERSONNALISE}}
+        </div>
+
+        <!-- Signature -->
+        <div class="letter-signature">
+          <div class="signature-line">Avec tout mon amour,</div>
+          <div class="signature-name">{{PRENOM_EXPEDITEUR}}</div>
+          <div class="signature-date">{{DATE_OFFRE}}</div>
+        </div>
+
+        <!-- Sceau décoratif -->
+        <div class="letter-seal">💌</div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- 
+╔════════════════════════════════════════════════════════════╗
+║  NOTE ÉDITORIALE                                            ║
+║  ──────────────────────────────────────────────────────    ║
+║  {{FORMULE_OUVERTURE}} peut être :                         ║
+║  - "Cher" / "Chère" (si relation formelle/neutre)          ║
+║  - "Mon cher" / "Ma chère" (si familier)                   ║
+║  - À adapter selon {{RELATION}}                            ║
+║                                                              ║
+║  {{MESSAGE_PERSONNALISE}} = 120-150 mots max               ║
+║  Ton : Authentique, chaleureux, personnel                  ║
+╚════════════════════════════════════════════════════════════╝
+-->
